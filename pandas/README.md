@@ -1,75 +1,35 @@
 # Pandas — Data Manipulation & Analysis Foundations
 
-This folder contains structured experiments and code snippets created while
-learning **Pandas**, with a focus on understanding *how tabular data is modeled,
-indexed, and transformed* in real-world data workflows.
 
-The emphasis is on building intuition for DataFrames as **labeled, column-oriented
-data structures built on top of NumPy**, rather than treating Pandas as a black box.
+This repository showcases my practical use of Pandas for real-world data handling, analysis, and preprocessing — the core skills required before applying machine learning models.
 
----
+## What’s covered
+- Loading and exporting data from common formats (CSV, Excel, JSON)
+- Inspecting datasets for structure, types, and data quality issues
+- Selecting, filtering, and transforming data using idiomatic Pandas workflows
+- Cleaning messy data: missing values, duplicates, inconsistent formats
+- Feature preparation: type casting, encoding-ready transformations
+- Groupby operations for aggregation, summarization, and pattern discovery
+- Merging, joining, and concatenating datasets across multiple keys
+- Working with time-series data: parsing, indexing, resampling
+- Efficient use of vectorized operations over loops
+- Applying functions with apply, map, and lambda expressions
+- Building reproducible exploratory data analysis (EDA) pipelines
+- Preparing clean, model-ready datasets for downstream ML tasks
+  
 
-## What I Covered
+## Learning approach
+I focus on:
+- Understanding *why* each operation is used
+- Writing readable, maintainable data pipelines
+- Avoiding shortcuts that break at scale
 
-### 1. Series vs DataFrame
-- Creating Series and DataFrames from different sources
-- Understanding labels, indices, and alignment
-- Differences between 1D and 2D data structures
-- When to use each and why
 
-**Key insight:** Pandas operations are label-aware, not position-first.
 
----
+## Tech
+- Python
+- Pandas
 
-### 2. Indexing & Selection
-- Column selection and row slicing
-- `loc` vs `iloc` and when each is appropriate
-- Boolean indexing and conditional filtering
-- Common indexing pitfalls and silent errors
-
-**Key insight:** most Pandas bugs come from index confusion, not syntax.
-
----
-
-### 3. Data Cleaning & Missing Values
-- Detecting missing data (`isna`, `notna`)
-- Dropping vs imputing values
-- Type conversions and inconsistent data
-- Cleaning messy, real-world datasets
-
-**Key insight:** data cleaning is a modeling decision, not a preprocessing afterthought.
-
----
-
-### 4. Vectorized Operations & Column-wise Logic
-- Applying functions across columns and rows
-- Avoiding Python loops in favor of vectorized operations
-- Chained operations and readability trade-offs
-
----
-
-### 5. GroupBy & Aggregation
-- Split–apply–combine mental model
-- Aggregations across groups
-- Multi-level grouping
-- Practical use cases (summaries, statistics)
-
-**Key insight:** `groupby` is a declarative transformation pipeline, not a loop.
-
----
-
-### 6. Merging & Joining
-- `merge`, `join`, and `concat`
-- Understanding keys and join types
-- Handling mismatched or missing keys
-- Common join mistakes
-
----
-
-### 7. Basic Exploratory Analysis
-- Descriptive statistics
-- Sorting and filtering for insight
-- Preparing data for visualization or modeling
 
 ---
 
